@@ -1,0 +1,7 @@
+<launch>
+  <node name="rviz" pkg="rviz" type="rviz" />
+  <include file="$(find scene_segmenter)/launch/scene_segmenter.launch"></include>
+  <include file="$(find relationship_visualizer)/launch/relationship_visualizer.launch"></include>
+  <include file="$(find openni_launch)/launch/openni.launch"></include>
+  <include file="$(find segment_saver)/launch/segment_saver.launch"></include>
+</launch>
